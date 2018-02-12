@@ -206,7 +206,7 @@ body {;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: 3px solid #2e3233;
+  border: 3px solid #ffffff;
 }
 .cd-search-trigger::after {
   /* handle */
@@ -240,7 +240,7 @@ body {;
   margin-top: -2px;
   left: 50%;
   margin-left: -11px;
-  background: #2e3233;
+  background: #ffffff;
   opacity: 0;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -297,7 +297,7 @@ body {;
   display: inline-block;
   height: 3px;
   width: 24px;
-  background: #2e3233;
+  background: #ffffff;
 }
 .cd-nav-trigger span {
   /* line in the center */
