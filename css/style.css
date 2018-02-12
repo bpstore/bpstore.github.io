@@ -91,6 +91,7 @@ Main components
 
 .cd-main-content {
   background: #40508e;
+  position: fixed;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 18px;
