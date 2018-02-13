@@ -61,7 +61,18 @@
 	
 	<br/><br/>
 	<p>
-	<div class="container"><div class="row"><div class="col-sm-8"><div class="panel-heading">
+	<div class="container"><div class="row"><div class="col-sm-8"><div class="panel-heading"><h2>Animated SVG Hero Slider</h2><hr/>
+		Slider halaman penuh, dengan elemen SVG animasi digunakan sebagai efek transisi.
+		Selagi menjelajahi web untuk mendapatkan inspirasi, kami bertemu dengan situs Honda HR-V yang didesain dengan indah . Bila Anda menavigasi dari satu bagian ke bagian lainnya, transisi dihias dengan bentuk animasi - dibuat menggunakan <canvas>elemen.
+
+Kami memutuskan untuk membuat sesuatu yang serupa, tapi alih-alih menggunakan kanvas, kami bermain dengan SVG . Selain itu, alih-alih membuat tata letak vertikal yang memerlukan pengguliran paksa untuk melihat animasi, kami mengubah keseluruhan sumber daya menjadi slider pahlawan.
+
+Sumber daya yang digunakan:
+
+Snap.svg untuk menghidupkan elemen SVG.
+Ikon dari perpustakaan Nucleo kami .
+Gambar dari Unsplash .
+		
 		<textarea class="form-control" rows="5" id="comment"><section class="cd-slider-wrapper">
 	<ul class="cd-slider">
 		<li class="visible">
@@ -94,7 +105,30 @@
 		</svg>
 	</div> <!-- .cd-svg-cover -->
 </section> <!-- .cd-slider-wrapper -->
-</textarea></div></div>
+		</textarea><br/><br/><textarea class="form-control" rows="5" id="comment">.cd-slider-wrapper {
+  position: relative;
+}
+ 
+.cd-slider > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.cd-slider > li.visible {
+  /* selected slide */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}</textarea><br/><br/>
+		
+		<textarea class="form-control" rows="5" id="comment">var svgCoverLayer = $('.cd-slider-wrapper').find('div.cd-svg-cover'),
+	svgPath = Snap('#cd-changing-path'),
+	path1 = svgCoverLayer.data('step1');
+ 
+svgPath.animate({'d': path2}, 300, customMinaAnimation, function(){
+	//...
+});</textarea></div></div>
 		
 		<div class="col-sm-4"><div class="panel-body">tes2</div></div></div></div>
 
