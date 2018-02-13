@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: sans-serif;
   color: #2e3233;
-  background-color: #ffffff;
+  background-color: #40508e;
 }
 @media only screen and (max-width: 1169px) {
   body.nav-on-left.overflow-hidden {
