@@ -45,7 +45,9 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Netv">
   Net Tv
 </button>
-    <button type="button" class="btn btn-primary">Sony</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Rcti">
+  Rcti
+</button>
 	  <button type="button" class="btn btn-primary">Samsung</button>
     <button type="button" class="btn btn-primary">Sony</button>
   </div></a>
@@ -163,8 +165,29 @@
   </div>
 </div>
 
+<div class="modal fade" id="Rcti" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"> <div class="embed-responsive embed-responsive-16by9">
+	      
+        <iframe id="streamuri" src="http://www.tvonline.id/playerrcti.php" allowfullscreen></iframe>  </div></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/snap.svg-min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
+
+
