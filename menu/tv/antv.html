@@ -13,7 +13,7 @@
   <a class="navbar-brand" href="#">
     <img src="http://www.bpstore.cf/menu/tv/bptv.jpg" width="110" height="40" alt="">
   </a>
-</nav><br/><br/>
+</nav><br/><br/><html class="loading">
   <div class="container"
   <ul class="list-group">
   <li class="list-group-item active"><a class="navbar-brand" href="#">
@@ -22,310 +22,47 @@
   </a></li>
   <li class="list-group-item"><div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/w0rLdr8VGdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></li>
   
-    </ul></div>
+    </ul></div></html>
 </body>
 <style>
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-.timeline-item {
-   background: #fff;
-   border: 1px solid;
-   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-   border-radius: 3px;
-   padding: 12px;
- 
-   margin: 0 auto;
-   max-width: 472px;
-   min-height: 200px;
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
- 
- 
-@keyframes placeHolderShimmer{
-    0%{
-        background-position: -468px 0
-    }
-    100%{
-        background-position: 468px 0
-    }
+html, body {
+    /* For the loading indicator to be vertically centered ensure */
+    /* the html and body elements take up the full viewport */
+    min-height: 100%;
 }
- 
-.animated-background {
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeHolderShimmer;
-    animation-timing-function: linear;
-    background: #f6f7f8;
-    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-    background-size: 800px 104px;
-    height: 96px;
-    position: relative;
-}
- 
- 
-.background-masker {
-    background: #fff;
-    position: absolute;
-}
- 
-/* Every thing below this is just positioning */
- 
-.background-masker.header-top,
-.background-masker.header-bottom,
-.background-masker.subheader-bottom {
-    top: 0;
-    left: 40px;
-    right: 0;
-    height: 10px;
-}
- 
-.background-masker.header-left,
-.background-masker.subheader-left,
-.background-masker.header-right,
-.background-masker.subheader-right {
-    top: 10px;
-    left: 40px;
-    height: 8px;
-    width: 10px;
-}
- 
-.background-masker.header-bottom {
-    top: 18px;
-    height: 6px;
-}
- 
-.background-masker.subheader-left,
-.background-masker.subheader-right {
-    top: 24px;
-    height: 6px;
-}
- 
- 
-.background-masker.header-right,
-.background-masker.subheader-right {
-    width: auto;
-    left: 300px;
-    right: 0;
-}
- 
-.background-masker.subheader-right {
-    left: 230px;
-}
- 
-.background-masker.subheader-bottom {
-    top: 30px;
-    height: 10px;
-}
- 
-.background-masker.content-top,
-.background-masker.content-second-line,
-.background-masker.content-third-line,
-.background-masker.content-second-end,
-.background-masker.content-third-end,
-.background-masker.content-first-end {
-    top: 40px;
-    left: 0;
-    right: 0;
-    height: 6px;
-}
- 
-.background-masker.content-top {
-    height:20px;
-}
- 
-.background-masker.content-first-end,
-.background-masker.content-second-end,
-.background-masker.content-third-end{
-    width: auto;
-    left: 380px;
-    right: 0;
-    top: 60px;
-    height: 8px;
-}
- 
-.background-masker.content-second-line  {
-    top: 68px;
-}
- 
-.background-masker.content-second-end {
-    left: 420px;
-    top: 74px;
-}
- 
-.background-masker.content-third-line {
-    top: 82px;
-}
- 
-.background-masker.content-third-end {
-    left: 300px;
-    top: 88px;
-  }</style>
+html.loading {
+    /* Replace #333 with the background-color of your choice */
+    /* Replace loading.gif with the loading image of your choice */
+    background: #333 url('loading.gif') no-repeat 50% 50%;
 
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+}
+body {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+html.loading body {
+    /* Make the contents of the body opaque during loading */
+    opacity: 0;
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-  <div class="timeline-wrapper">
-    <div class="timeline-item">
-        <div class="animated-background">
-            <div class="background-masker header-top"></div>
-            <div class="background-masker header-left"></div>
-            <div class="background-masker header-right"></div>
-            <div class="background-masker header-bottom"></div>
-            <div class="background-masker subheader-left"></div>
-            <div class="background-masker subheader-right"></div>
-            <div class="background-masker subheader-bottom"></div>
-            <div class="background-masker content-top"></div>
-            <div class="background-masker content-first-end"></div>
-            <div class="background-masker content-second-line"></div>
-            <div class="background-masker content-second-end"></div>
-            <div class="background-masker content-third-line"></div>
-            <div class="background-masker content-third-end"></div>
-        </div>
-    </div>
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: opacity 0;
+    transition: opacity 0;
+}</style>
+
+<script>
+  // IE10+
+document.getElementsByTagName( "html" )[0].classList.remove( "loading" );
+
+// All browsers
+document.getElementsByTagName( "html" )[0].className.replace( /loading/, "" );
+
+// Or with jQuery
+$( "html" ).removeClass( "loading" );
+</script>
