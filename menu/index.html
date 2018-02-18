@@ -3,8 +3,11 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-	<link rel="stylesheet" href="http://bpstore.github.io/modal/bootstrap.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 	<link href='http://fonts.googleapis.com/css?family=Jaldi:700,400' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -285,22 +288,7 @@
     </div>
   </div>
 </div>
- <script src="http://bpstore.github.io/modal/jquery-1.11.2.min.js"></script>
-        <script src="http://bpstore.github.io/modal/bootstrap.js"></script>
-        <script>
-        $(function(){
-            $(document).on('click','.edit-record',function(e){
-                e.preventDefault();
-                $("#myModal").modal('show');
-                $.post('hasil.php',
-                    {id:$(this).attr('data-id')},
-                    function(html){
-                        $(".modal-body").html(html);
-                    }   
-                );
-            });
-        });
-    </script>
+ 
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/snap.svg-min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
