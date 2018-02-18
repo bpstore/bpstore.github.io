@@ -3,7 +3,8 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://bpstore.github.io/modal/bootstrap.css"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://bpstore.github.io/modal/bootstrap.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Jaldi:700,400' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -55,7 +56,8 @@
                 </tr>
             </table><br/>
         <a href="#" class="data-toggle="modal" data-target="#Antv">Antv2</a><br/>
-<a href="#" class="data-toggle="modal" data-target="Antv">Antv3</a>								  
+<button onclick="document.getElementById('id01').style.display='block'"
+class="w3-button">Open Modal</button>							  
 
 </div>
 	      </div> <div class="col-sm-3"></div> </div></p> 
@@ -195,6 +197,19 @@
             </div>
         </div>
 
+		<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <p>Some text in the Modal..</p>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+</div>							    
+									    
+									    
+									    
  <script src="http://bpstore.github.io/modal/jquery-1.11.2.min.js"></script>
         <script src="http://bpstore.github.io/modal/bootstrap.js"></script>
         <script>
