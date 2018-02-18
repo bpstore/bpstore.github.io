@@ -39,20 +39,21 @@
 					
             <table class="table">
                 <tr>
-                    <th>Nama</th>
-                    <th>Alamat</th>
-                    <th>Aksi</th>
+                    <th><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></th>
+                    <th><button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">Open Modal2</button>
+</th>
+                    <th><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></th>
                 </tr>
                 <!--pada prakteknya looping dari database-->
                 <tr>
-                    <td>Hari</td>
-                    <td>Jakarta</td>
-                    <td><a href="#" class="edit-record" data-id="1">Antv1</a></td>
+                    <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
+                    <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
+                    <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
                 </tr>
                 <tr>
-                    <td>Hera</td>
-                    <td>Bekasi</td>
-                    <td><a href="#" class="edit-record" data-id="Netv">Net tv</a></td>
+                    <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
+                    <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
+                    <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
                 </tr>
             </table><br/>
         <a href="#" class="data-toggle="modal" data-target="#Antv">Antv2</a><br/>
@@ -129,9 +130,7 @@ class="w3-button">Open Modal</button>
         </button>
       </div>
       <div class="modal-body">
-	 <div class="embed-responsive embed-responsive-16by9"> <iframe width="560" height="315" src="https://www.youtube.com/embed/FcEfFCGygWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
-	     </div> 
-      </div>
+	  </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
@@ -203,12 +202,25 @@ class="w3-button">Open Modal</button>
       <span onclick="document.getElementById('id01').style.display='none'" 
       class="w3-button w3-display-topright">&times;</span>
       <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
+      <p><div class="embed-responsive embed-responsive-16by9">   <iframe width="560" height="315" src="https://www.youtube.com/embed/FcEfFCGygWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+	     </div> 
+     </p>
     </div>
   </div>
 </div>							    
 									    
-									    
+		div id="id02" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <p>test2..</p>
+      <p><div class="embed-responsive embed-responsive-16by9">   <iframe width="560" height="315" src="https://www.youtube.com/embed/FcEfFCGygWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+	     </div> 
+     </p>
+    </div>
+  </div>
+</div>											    
 									    
  <script src="http://bpstore.github.io/modal/jquery-1.11.2.min.js"></script>
         <script src="http://bpstore.github.io/modal/bootstrap.js"></script>
