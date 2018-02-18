@@ -3,7 +3,7 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
 	<link rel="stylesheet" href="http://bpstore.github.io/modal/bootstrap.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Jaldi:700,400' rel='stylesheet' type='text/css'>
 
@@ -39,11 +39,12 @@
 					
             <table class="table">
                 <tr>
-                    <th><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></th>
-                    <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Antv">Open Modalantv</button>
+                    <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Netv">Net Tv</button>
 </th>
-                    <th><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></th>
-                </tr>
+                    <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Antv">Antv</button>
+</th>
+                    <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Rcti">Rcti</button>
+</tr>
                 <!--pada prakteknya looping dari database-->
                 <tr>
                     <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button></td>
@@ -179,48 +180,7 @@ class="w3-button">Open Modal</button>
   </div>
 </div>
 
- <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="simpan btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-		<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id01').style.display='none'" 
-      class="w3-button w3-display-topright">&times;</span>
-      <p>Some text in the Modal..</p>
-      <p><div class="embed-responsive embed-responsive-16by9">   <iframe width="560" height="315" src="https://www.youtube.com/embed/FcEfFCGygWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
-	     </div> 
-     </p>
-    </div>
-  </div>
-</div>							    
-									    
-		div id="id02" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id01').style.display='none'" 
-      class="w3-button w3-display-topright">&times;</span>
-      <p>test2..</p>
-      <p><div class="embed-responsive embed-responsive-16by9">   <iframe width="560" height="315" src="https://www.youtube.com/embed/FcEfFCGygWY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
-	     </div> 
-     </p>
-    </div>
-  </div>
-</div>											    
+ 						    
 									    
  <script src="http://bpstore.github.io/modal/jquery-1.11.2.min.js"></script>
         <script src="http://bpstore.github.io/modal/bootstrap.js"></script>
