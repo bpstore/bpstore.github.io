@@ -9,60 +9,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body><!-- Just an image -->
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-fixed bg-light">
   <a class="navbar-brand" href="#">
     <img src="http://www.bpstore.cf/menu/tv/bptv.jpg" width="110" height="40" alt="">
   </a>
-</nav><br/><br/><html class="loading">
+</nav><br/><br/>
   <div class="container"
   <ul class="list-group">
-  <li class="list-group-item active"><a class="navbar-brand" href="#">
-    <img src="https://png.icons8.com/color/50/000000/circled-left.png" width="20" height="15" class="d-inline-block align-top" alt="">
-    Kembali
-  </a></li>
+  
   <li class="list-group-item"><div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/w0rLdr8VGdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></li>
   
-    </ul></div></html>
+    </ul></div>
 </body>
-<style>
-html {
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-}
-html, body {
-    /* For the loading indicator to be vertically centered ensure */
-    /* the html and body elements take up the full viewport */
-    min-height: 100%;
-}
-html.loading {
-    /* Replace #333 with the background-color of your choice */
-    /* Replace loading.gif with the loading image of your choice */
-    background: #333 url('loading.gif') no-repeat 50% 50%;
-
-    /* Ensures that the transition only runs in one direction */
-    -webkit-transition: background-color 0;
-    transition: background-color 0;
-}
-body {
-    -webkit-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-}
-html.loading body {
-    /* Make the contents of the body opaque during loading */
-    opacity: 0;
-
-    /* Ensures that the transition only runs in one direction */
-    -webkit-transition: opacity 0;
-    transition: opacity 0;
-}</style>
-
-<script>
-  // IE10+
-document.getElementsByTagName( "html" )[0].classList.remove( "loading" );
-
-// All browsers
-document.getElementsByTagName( "html" )[0].className.replace( /loading/, "" );
-
-// Or with jQuery
-$( "html" ).removeClass( "loading" );
-</script>
